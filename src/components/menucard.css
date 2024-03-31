@@ -1,0 +1,18 @@
+.menuCardDiv {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.menuCardDiv:first-of-type {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.iconNtext {
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+}
