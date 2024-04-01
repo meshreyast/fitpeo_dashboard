@@ -5,7 +5,15 @@ import { IoWalletOutline } from "react-icons/io5";
 import { BiSolidOffer } from "react-icons/bi";
 import { MdOutlineLiveHelp } from "react-icons/md";
 
-import { IoIosArrowForward } from "react-icons/io"
+import { AiOutlineDollarCircle } from "react-icons/ai";
+import { TiDocumentText } from "react-icons/ti";
+import { CiWallet } from "react-icons/ci";
+import { TbShoppingBag } from "react-icons/tb";
+
+import { IoIosArrowForward } from "react-icons/io";
+
+import { FaArrowUpLong } from "react-icons/fa6";
+import { FaArrowDownLong } from "react-icons/fa6";
 
 export const menuItems = [
     {
@@ -36,5 +44,49 @@ export const menuItems = [
         icon: <MdOutlineLiveHelp size={"20px"} />,
         text: "Help",
         arrow: <IoIosArrowForward />,
+    },
+]
+
+
+export const tabItems = [
+    {
+        image: <AiOutlineDollarCircle size={"50px"} color="#01ab4d" />,
+        title: "Earnings",
+        amount: "$198K",
+        arrow: <FaArrowUpLong />,
+        arrowColor: "#01ab4d",
+        pnl: "37.8%",
+        time: "this month",
+        bgColor: "#daffeb"
+    },
+    {
+        image: <TiDocumentText size={"50px"} color="#a712fe" />,
+        title: "Orders",
+        amount: "$2.4K",
+        arrow: <FaArrowDownLong />,
+        arrowColor: "#d7000e",
+        pnl: "2%",
+        time: "this month",
+        bgColor: "#e7dbff"
+    },
+    {
+        image: <CiWallet size={"50px"} color="#0456be" />,
+        title: "Balance",
+        amount: "$2.4K",
+        arrow: <FaArrowDownLong />,
+        arrowColor: "#d7000e",
+        pnl: "2%",
+        time: "this month",
+        bgColor: "#ccf2ff"
+    },
+    {
+        image: <TbShoppingBag size={"50px"} color="#d7000e" />,
+        title: "Total Sales",
+        amount: "$89K",
+        arrow: <FaArrowUpLong />,
+        arrowColor: "#01ab4d",
+        pnl: "11%",
+        time: "this week",
+        bgColor: "#feb0d8"
     },
 ]
