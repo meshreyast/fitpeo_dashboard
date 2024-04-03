@@ -28,14 +28,18 @@ const Sidebar = ({ isOpen }) => {
                 </div>
             </div>
             <div className='userCard'>
-                <div className='picNtext'>
-                    <CgProfile size={"30px"} />
-                    <div className="userTexts">
-                        <p className='name'>Evano</p>
-                        <p className='designation'>Project Manager</p>
-                    </div>
-                </div>
-                <IoIosArrowDown />
+                {isOpen && (
+                    <>
+                        <div className='picNtext'>
+                            <CgProfile size={"30px"} />
+                            <div className="userTexts">
+                                <p className='name'>Evano</p>
+                                <p className='designation'>Project Manager</p>
+                            </div>
+                        </div>
+                        <IoIosArrowDown />
+                    </>
+                )}
             </div>
         </div>
     )

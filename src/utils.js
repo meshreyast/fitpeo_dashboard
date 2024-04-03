@@ -90,3 +90,69 @@ export const tabItems = [
         bgColor: "#feb0d8"
     },
 ]
+
+export const BarChartData = [
+    {
+        "label": "Jan",
+        "value": 35,
+    },
+    {
+        "label": "Feb",
+        "value": 25,
+    },
+    {
+        "label": "Mar",
+        "value": 45,
+    },
+    {
+        "label": "Apr",
+        "value": 35,
+    },
+    {
+        "label": "May",
+        "value": 40,
+    },
+    {
+        "label": "Jun",
+        "value": 20,
+    },
+    {
+        "label": "Jul",
+        "value": 40,
+    },
+    {
+        "label": "Aug",
+        "value": 50,
+    },
+    {
+        "label": "Sep",
+        "value": 45,
+    },
+    {
+        "label": "Oct",
+        "value": 40,
+    },
+    {
+        "label": "Nov",
+        "value": 35,
+    },
+    {
+        "label": "Dec",
+        "value": 35,
+    },
+]
+
+export const DoughnutChartData = [
+    {
+        "label": "20%",
+        "value": 200,
+    },
+    {
+        "label": "45%",
+        "value": 450,
+    },
+    {
+        "label": "35%",
+        "value": 350,
+    },
+]

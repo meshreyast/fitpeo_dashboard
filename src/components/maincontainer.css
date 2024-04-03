@@ -1,5 +1,6 @@
 .mainContainerMain {
-    height: 100%;
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: #f5f6f8;
@@ -7,6 +8,7 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
+    position: relative;
 }
 
 .width80 {
@@ -15,6 +17,16 @@
 
 .width100 {
     width: 100%;
+}
+
+.hideButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    font-size: 30px;
+    transform: rotate(270deg);
+    cursor: pointer;
 }
 
 .introBar {
@@ -34,7 +46,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
     padding: 2px 5px;
     border-radius: 5px;
 }
@@ -99,9 +110,189 @@
     font-size: 12px;
 }
 
+.chartsDiv {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.overviewChartDiv,
+.customersChartDiv {
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.overviewChartDiv {
+    width: 900px;
+    height: 399px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-color: white;
+}
+
+.customersChartDiv {
+    width: 300px;
+}
+
+.overviewHeader {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.overviewTexts {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.textO {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+}
+
+.textM {
+    font-size: 16px;
+    font-weight: 200;
+    color: gray;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #f5f6f8;
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+.dropdowntext {
+    color: gray;
+}
+
+.overviewChart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.customersTexts {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.customersChart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    position: relative;
+}
+
+.textOverlay {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textOverlay :first-child {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.textOverlay :nth-child(2) {
+    font-size: 13px;
+    text-align: center;
+}
+
+.tableDiv {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.tableHeaderTexts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.tableHeaderTextTitle {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.searchDrop {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tableContainer {
+    width: 100%;
+    padding: 0 10px;
+    overflow-x: scroll;
+}
+
+.tableheads {
+    font-size: 12px;
+    color: gray;
+    border-bottom: 2px solid gray;
+}
+
+.tableFirstItems {
+    display: flex;
+    gap: 5px;
+}
+
+.tableImage {
+    width: 60px;
+    border-radius: 10px;
+}
+
+.productTitle {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.productDesc {
+    font-size: 10px;
+    color: gray;
+}
+
+.tableData {
+    text-align: center;
+}
+
 @media only screen and (max-width: 520px) {
     .mainContainerMain {
         width: 100%;
+        height: auto;
     }
 
     .introText {
@@ -110,5 +301,35 @@
 
     .searchBar {
         width: 8rem;
+    }
+
+    .revenueTabs {
+        flex-direction: column;
+    }
+
+    .tab {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .chartsDiv {
+        flex-direction: column;
+    }
+
+    .overviewChartDiv,
+    .customersChartDiv {
+        width: 100%;
+    }
+
+    .overviewChartDiv {
+        margin-bottom: 20px;
+    }
+
+    .tableDiv {
+        height: auto;
+    }
+
+    .tableHeaderTextTitle {
+        font-size: 16px;
     }
 }
